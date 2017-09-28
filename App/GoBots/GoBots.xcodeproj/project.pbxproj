@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D6DA7D01F5B699D00817442 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DA7CF1F5B699D00817442 /* main.m */; };
+		4D6DA7D31F5B699D00817442 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DA7D21F5B699D00817442 /* AppDelegate.m */; };
+		4D6DA7DB1F5B699D00817442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DA7DA1F5B699D00817442 /* Assets.xcassets */; };
+		4D6DA7DE1F5B699D00817442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DA7DC1F5B699D00817442 /* LaunchScreen.storyboard */; };
+		4D6DA7EB1F5B6F0900817442 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DA7EA1F5B6F0900817442 /* MainViewController.storyboard */; };
+		4D6DA7EE1F5B6F2900817442 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DA7ED1F5B6F2900817442 /* MainViewController.m */; };
+		4DD53B111F5B7FF9008BB66B /* UIColor+GoBotsColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD53B101F5B7FF9008BB66B /* UIColor+GoBotsColor.m */; };
+		4DD53B221F5B931E008BB66B /* GameBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD53B211F5B931E008BB66B /* GameBoardView.m */; };
+		4DD53B251F5B9437008BB66B /* CellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD53B241F5B9437008BB66B /* CellView.m */; };
+		4DD53B2E1F5BB9D9008BB66B /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD53B2D1F5BB9D9008BB66B /* GameController.m */; };
+		4DD53B321F5BC477008BB66B /* BoardObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD53B311F5BC477008BB66B /* BoardObject.m */; };
+		4DD53B351F5BCFDF008BB66B /* Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD53B341F5BCFDF008BB66B /* Position.m */; };
+		4DD53B381F5BD63F008BB66B /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD53B371F5BD63F008BB66B /* Robot.m */; };
+		4DD53B3B1F5BDB16008BB66B /* TimeUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD53B3A1F5BDB16008BB66B /* TimeUtility.m */; };
+		4DD53B421F5C7B4A008BB66B /* SoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD53B411F5C7B4A008BB66B /* SoundEffect.m */; };
+		4DD53B471F5C844B008BB66B /* sound_A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DD53B441F5C844B008BB66B /* sound_A.wav */; };
+		4DD53B481F5C844B008BB66B /* sound_win_B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DD53B451F5C844B008BB66B /* sound_win_B.wav */; };
+		4DD53B4C1F5C8814008BB66B /* MessageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD53B4B1F5C8814008BB66B /* MessageUtil.m */; };
+		4DD53B5A1F5CA9A8008BB66B /* sound_B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DD53B581F5CA9A8008BB66B /* sound_B.wav */; };
+		4DD53B5B1F5CA9A8008BB66B /* sound_win_A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DD53B591F5CA9A8008BB66B /* sound_win_A.wav */; };
+		4DD53B5E1F5CEEBD008BB66B /* GameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD53B5D1F5CEEBD008BB66B /* GameEngine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D6DA7CB1F5B699D00817442 /* GoBots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoBots.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D6DA7CF1F5B699D00817442 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D6DA7D11F5B699D00817442 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4D6DA7D21F5B699D00817442 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4D6DA7DA1F5B699D00817442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D6DA7DD1F5B699D00817442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D6DA7DF1F5B699D00817442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D6DA7EA1F5B6F0900817442 /* MainViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainViewController.storyboard; path = Main/MainViewController.storyboard; sourceTree = "<group>"; };
+		4D6DA7EC1F5B6F2900817442 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Main/MainViewController.h; sourceTree = "<group>"; };
+		4D6DA7ED1F5B6F2900817442 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Main/MainViewController.m; sourceTree = "<group>"; };
+		4DD53B0F1F5B7FF9008BB66B /* UIColor+GoBotsColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+GoBotsColor.h"; path = "Utility/Color/UIColor+GoBotsColor.h"; sourceTree = "<group>"; };
+		4DD53B101F5B7FF9008BB66B /* UIColor+GoBotsColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+GoBotsColor.m"; path = "Utility/Color/UIColor+GoBotsColor.m"; sourceTree = "<group>"; };
+		4DD53B201F5B931E008BB66B /* GameBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameBoardView.h; path = Views/GameBoardView.h; sourceTree = "<group>"; };
+		4DD53B211F5B931E008BB66B /* GameBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameBoardView.m; path = Views/GameBoardView.m; sourceTree = "<group>"; };
+		4DD53B231F5B9437008BB66B /* CellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellView.h; path = Views/CellView.h; sourceTree = "<group>"; };
+		4DD53B241F5B9437008BB66B /* CellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellView.m; path = Views/CellView.m; sourceTree = "<group>"; };
+		4DD53B291F5B95E6008BB66B /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		4DD53B2A1F5BAF2B008BB66B /* Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Position.h; path = Model/Position.h; sourceTree = "<group>"; };
+		4DD53B2C1F5BB9D9008BB66B /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameController.h; path = Controller/GameController.h; sourceTree = "<group>"; };
+		4DD53B2D1F5BB9D9008BB66B /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameController.m; path = Controller/GameController.m; sourceTree = "<group>"; };
+		4DD53B301F5BC477008BB66B /* BoardObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardObject.h; path = Model/BoardObject.h; sourceTree = "<group>"; };
+		4DD53B311F5BC477008BB66B /* BoardObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoardObject.m; path = Model/BoardObject.m; sourceTree = "<group>"; };
+		4DD53B331F5BCDE4008BB66B /* GoBots-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GoBots-PrefixHeader.pch"; sourceTree = "<group>"; };
+		4DD53B341F5BCFDF008BB66B /* Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Position.m; path = Model/Position.m; sourceTree = "<group>"; };
+		4DD53B361F5BD63F008BB66B /* Robot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Robot.h; path = Model/Robot.h; sourceTree = "<group>"; };
+		4DD53B371F5BD63F008BB66B /* Robot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Robot.m; path = Model/Robot.m; sourceTree = "<group>"; };
+		4DD53B391F5BDB16008BB66B /* TimeUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeUtility.h; path = Utility/TimeUtility.h; sourceTree = "<group>"; };
+		4DD53B3A1F5BDB16008BB66B /* TimeUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeUtility.m; path = Utility/TimeUtility.m; sourceTree = "<group>"; };
+		4DD53B401F5C7B4A008BB66B /* SoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundEffect.h; path = Media/SoundEffect.h; sourceTree = "<group>"; };
+		4DD53B411F5C7B4A008BB66B /* SoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoundEffect.m; path = Media/SoundEffect.m; sourceTree = "<group>"; };
+		4DD53B441F5C844B008BB66B /* sound_A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = sound_A.wav; path = Media/Resources/sound_A.wav; sourceTree = "<group>"; };
+		4DD53B451F5C844B008BB66B /* sound_win_B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = sound_win_B.wav; path = Media/Resources/sound_win_B.wav; sourceTree = "<group>"; };
+		4DD53B4A1F5C8814008BB66B /* MessageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageUtil.h; path = Utility/MessageUtil.h; sourceTree = "<group>"; };
+		4DD53B4B1F5C8814008BB66B /* MessageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageUtil.m; path = Utility/MessageUtil.m; sourceTree = "<group>"; };
+		4DD53B581F5CA9A8008BB66B /* sound_B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = sound_B.wav; path = Media/Resources/sound_B.wav; sourceTree = "<group>"; };
+		4DD53B591F5CA9A8008BB66B /* sound_win_A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = sound_win_A.wav; path = Media/Resources/sound_win_A.wav; sourceTree = "<group>"; };
+		4DD53B5C1F5CEEBD008BB66B /* GameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameEngine.h; path = Controller/GameEngine.h; sourceTree = "<group>"; };
+		4DD53B5D1F5CEEBD008BB66B /* GameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameEngine.m; path = Controller/GameEngine.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D6DA7C81F5B699D00817442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D6DA7C21F5B699D00817442 = {
+			isa = PBXGroup;
+			children = (
+				4D6DA7CD1F5B699D00817442 /* GoBots */,
+				4D6DA7CC1F5B699D00817442 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D6DA7CC1F5B699D00817442 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D6DA7CB1F5B699D00817442 /* GoBots.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D6DA7CD1F5B699D00817442 /* GoBots */ = {
+			isa = PBXGroup;
+			children = (
+				4DD53B2B1F5BB944008BB66B /* Controller */,
+				4D6DA7E81F5B6EE800817442 /* Launch */,
+				4DD53B3F1F5C7B38008BB66B /* Media */,
+				4DD53B121F5B8B39008BB66B /* Model */,
+				4D6DA7CE1F5B699D00817442 /* Supporting Files */,
+				4DD53B0D1F5B7F60008BB66B /* Utility */,
+				4D6DA7E91F5B6EF000817442 /* ViewController */,
+				4DD53B1F1F5B9302008BB66B /* Views */,
+				4D6DA7DA1F5B699D00817442 /* Assets.xcassets */,
+				4D6DA7DF1F5B699D00817442 /* Info.plist */,
+			);
+			path = GoBots;
+			sourceTree = "<group>";
+		};
+		4D6DA7CE1F5B699D00817442 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DD53B331F5BCDE4008BB66B /* GoBots-PrefixHeader.pch */,
+				4D6DA7CF1F5B699D00817442 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D6DA7E81F5B6EE800817442 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				4D6DA7D11F5B699D00817442 /* AppDelegate.h */,
+				4D6DA7D21F5B699D00817442 /* AppDelegate.m */,
+				4D6DA7DC1F5B699D00817442 /* LaunchScreen.storyboard */,
+			);
+			name = Launch;
+			sourceTree = "<group>";
+		};
+		4D6DA7E91F5B6EF000817442 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4D6DA7EC1F5B6F2900817442 /* MainViewController.h */,
+				4D6DA7ED1F5B6F2900817442 /* MainViewController.m */,
+				4D6DA7EA1F5B6F0900817442 /* MainViewController.storyboard */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		4DD53B0D1F5B7F60008BB66B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4DD53B0E1F5B7F81008BB66B /* Color */,
+				4DD53B291F5B95E6008BB66B /* Constants.h */,
+				4DD53B4A1F5C8814008BB66B /* MessageUtil.h */,
+				4DD53B4B1F5C8814008BB66B /* MessageUtil.m */,
+				4DD53B391F5BDB16008BB66B /* TimeUtility.h */,
+				4DD53B3A1F5BDB16008BB66B /* TimeUtility.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		4DD53B0E1F5B7F81008BB66B /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				4DD53B0F1F5B7FF9008BB66B /* UIColor+GoBotsColor.h */,
+				4DD53B101F5B7FF9008BB66B /* UIColor+GoBotsColor.m */,
+			);
+			name = Color;
+			sourceTree = "<group>";
+		};
+		4DD53B121F5B8B39008BB66B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DD53B301F5BC477008BB66B /* BoardObject.h */,
+				4DD53B311F5BC477008BB66B /* BoardObject.m */,
+				4DD53B2A1F5BAF2B008BB66B /* Position.h */,
+				4DD53B341F5BCFDF008BB66B /* Position.m */,
+				4DD53B361F5BD63F008BB66B /* Robot.h */,
+				4DD53B371F5BD63F008BB66B /* Robot.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4DD53B1F1F5B9302008BB66B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DD53B231F5B9437008BB66B /* CellView.h */,
+				4DD53B241F5B9437008BB66B /* CellView.m */,
+				4DD53B201F5B931E008BB66B /* GameBoardView.h */,
+				4DD53B211F5B931E008BB66B /* GameBoardView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4DD53B2B1F5BB944008BB66B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4DD53B2C1F5BB9D9008BB66B /* GameController.h */,
+				4DD53B2D1F5BB9D9008BB66B /* GameController.m */,
+				4DD53B5C1F5CEEBD008BB66B /* GameEngine.h */,
+				4DD53B5D1F5CEEBD008BB66B /* GameEngine.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4DD53B3F1F5C7B38008BB66B /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				4DD53B431F5C840E008BB66B /* Resources */,
+				4DD53B401F5C7B4A008BB66B /* SoundEffect.h */,
+				4DD53B411F5C7B4A008BB66B /* SoundEffect.m */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+		4DD53B431F5C840E008BB66B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4DD53B441F5C844B008BB66B /* sound_A.wav */,
+				4DD53B581F5CA9A8008BB66B /* sound_B.wav */,
+				4DD53B591F5CA9A8008BB66B /* sound_win_A.wav */,
+				4DD53B451F5C844B008BB66B /* sound_win_B.wav */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D6DA7CA1F5B699D00817442 /* GoBots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D6DA7E21F5B699D00817442 /* Build configuration list for PBXNativeTarget "GoBots" */;
+			buildPhases = (
+				4D6DA7C71F5B699D00817442 /* Sources */,
+				4D6DA7C81F5B699D00817442 /* Frameworks */,
+				4D6DA7C91F5B699D00817442 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoBots;
+			productName = GoBots;
+			productReference = 4D6DA7CB1F5B699D00817442 /* GoBots.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D6DA7C31F5B699D00817442 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "The Tech Time";
+				TargetAttributes = {
+					4D6DA7CA1F5B699D00817442 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 266685794B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4D6DA7C61F5B699D00817442 /* Build configuration list for PBXProject "GoBots" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D6DA7C21F5B699D00817442;
+			productRefGroup = 4D6DA7CC1F5B699D00817442 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D6DA7CA1F5B699D00817442 /* GoBots */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D6DA7C91F5B699D00817442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D6DA7DB1F5B699D00817442 /* Assets.xcassets in Resources */,
+				4D6DA7DE1F5B699D00817442 /* LaunchScreen.storyboard in Resources */,
+				4D6DA7EB1F5B6F0900817442 /* MainViewController.storyboard in Resources */,
+				4DD53B471F5C844B008BB66B /* sound_A.wav in Resources */,
+				4DD53B5A1F5CA9A8008BB66B /* sound_B.wav in Resources */,
+				4DD53B5B1F5CA9A8008BB66B /* sound_win_A.wav in Resources */,
+				4DD53B481F5C844B008BB66B /* sound_win_B.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D6DA7C71F5B699D00817442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D6DA7D31F5B699D00817442 /* AppDelegate.m in Sources */,
+				4DD53B321F5BC477008BB66B /* BoardObject.m in Sources */,
+				4DD53B251F5B9437008BB66B /* CellView.m in Sources */,
+				4DD53B221F5B931E008BB66B /* GameBoardView.m in Sources */,
+				4DD53B2E1F5BB9D9008BB66B /* GameController.m in Sources */,
+				4DD53B5E1F5CEEBD008BB66B /* GameEngine.m in Sources */,
+				4D6DA7D01F5B699D00817442 /* main.m in Sources */,
+				4D6DA7EE1F5B6F2900817442 /* MainViewController.m in Sources */,
+				4DD53B4C1F5C8814008BB66B /* MessageUtil.m in Sources */,
+				4DD53B351F5BCFDF008BB66B /* Position.m in Sources */,
+				4DD53B381F5BD63F008BB66B /* Robot.m in Sources */,
+				4DD53B421F5C7B4A008BB66B /* SoundEffect.m in Sources */,
+				4DD53B3B1F5BDB16008BB66B /* TimeUtility.m in Sources */,
+				4DD53B111F5B7FF9008BB66B /* UIColor+GoBotsColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4D6DA7DC1F5B699D00817442 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D6DA7DD1F5B699D00817442 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D6DA7E01F5B699D00817442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D6DA7E11F5B699D00817442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D6DA7E31F5B699D00817442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 266685794B;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/GoBots-PrefixHeader.pch";
+				INFOPLIST_FILE = GoBots/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thetechtime.GoBots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4D6DA7E41F5B699D00817442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 266685794B;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/GoBots-PrefixHeader.pch";
+				INFOPLIST_FILE = GoBots/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thetechtime.GoBots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D6DA7C61F5B699D00817442 /* Build configuration list for PBXProject "GoBots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D6DA7E01F5B699D00817442 /* Debug */,
+				4D6DA7E11F5B699D00817442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D6DA7E21F5B699D00817442 /* Build configuration list for PBXNativeTarget "GoBots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D6DA7E31F5B699D00817442 /* Debug */,
+				4D6DA7E41F5B699D00817442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D6DA7C31F5B699D00817442 /* Project object */;
+}

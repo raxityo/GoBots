@@ -1,0 +1,20 @@
+//
+//  GoBots-PrefixHeader.pch
+//  GoBots
+//
+//  Created by Rax on 9/2/17.
+//  Copyright © 2017 The Tech Time. All rights reserved.
+//
+
+#ifndef GoBots_PrefixHeader_pch
+#define GoBots_PrefixHeader_pch
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "Constants.h"
+#import "Position.h"
+#import "BoardObject.h"
+#import "Robot.h"
+#import "UIColor+GoBotsColor.h"
+#import "TimeUtility.h"
+
+#endif /* GoBots_PrefixHeader_pch */

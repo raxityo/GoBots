@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VDE-KF-flt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="Iwi-b9-wOy">
+            <objects>
+                <viewController id="VDE-KF-flt" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y9F-Ea-AVF"/>
+                        <viewControllerLayoutGuide type="bottom" id="EZJ-Fr-JfO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IDd-cu-Cwu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zl-ee-rTX">
+                                <rect key="frame" x="312" y="116" width="25.5" height="51.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="32"/>
+                                <color key="textColor" red="0.92179429530000001" green="0.26985672119999998" blue="0.35301059480000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNV-oH-Jtf">
+                                <rect key="frame" x="55.5" y="68" width="262.5" height="48"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
+                                <color key="textColor" red="0.92179429530000001" green="0.26985672119999998" blue="0.35301059480000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UgO-5X-l5h" customClass="GameBoardView">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UgO-5X-l5h" secondAttribute="height" multiplier="1:1" id="J9b-YP-sgs"/>
+                                </constraints>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEL-Re-fOL">
+                                <rect key="frame" x="97.5" y="309" width="180" height="48"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjB-b1-xc7">
+                                <rect key="frame" x="37" y="499.5" width="25.5" height="51.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="32"/>
+                                <color key="textColor" red="0.46790686250000002" green="0.77649575469999998" blue="0.96081721779999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJj-pc-gsZ">
+                                <rect key="frame" x="55.5" y="551" width="262.5" height="48"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
+                                <color key="textColor" red="0.46790686250000002" green="0.77649575469999998" blue="0.96081721779999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPr-fM-lJx">
+                                <rect key="frame" x="306" y="633" width="53" height="24"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3X2-6b-Wji">
+                                <rect key="frame" x="91.5" y="256.5" width="192" height="154"/>
+                                <state key="normal" image="icon_play"/>
+                                <connections>
+                                    <action selector="didTapPlay:" destination="VDE-KF-flt" eventType="touchUpInside" id="Kn2-qQ-eUV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2zl-ee-rTX" firstAttribute="top" secondItem="gNV-oH-Jtf" secondAttribute="bottom" id="0j8-Wp-Iha"/>
+                            <constraint firstItem="HJj-pc-gsZ" firstAttribute="width" secondItem="gNV-oH-Jtf" secondAttribute="width" id="3Rk-QK-qs8"/>
+                            <constraint firstAttribute="bottom" secondItem="QPr-fM-lJx" secondAttribute="bottom" constant="10" id="4fc-Ia-dQ6"/>
+                            <constraint firstItem="UgO-5X-l5h" firstAttribute="top" secondItem="2zl-ee-rTX" secondAttribute="bottom" constant="16" id="CqY-nW-JOE"/>
+                            <constraint firstAttribute="trailing" secondItem="QPr-fM-lJx" secondAttribute="trailing" constant="16" id="Gtu-Yp-iuG"/>
+                            <constraint firstItem="UgO-5X-l5h" firstAttribute="centerY" secondItem="IDd-cu-Cwu" secondAttribute="centerY" id="THH-cd-dTl"/>
+                            <constraint firstItem="SEL-Re-fOL" firstAttribute="width" secondItem="UgO-5X-l5h" secondAttribute="width" multiplier="0.6" id="Tym-g5-PjY"/>
+                            <constraint firstItem="BjB-b1-xc7" firstAttribute="top" secondItem="UgO-5X-l5h" secondAttribute="bottom" constant="16" id="VB6-iY-scQ"/>
+                            <constraint firstItem="3X2-6b-Wji" firstAttribute="centerY" secondItem="IDd-cu-Cwu" secondAttribute="centerY" id="VsA-O0-dCp"/>
+                            <constraint firstItem="HJj-pc-gsZ" firstAttribute="centerX" secondItem="UgO-5X-l5h" secondAttribute="centerX" id="ZfO-4T-foJ"/>
+                            <constraint firstItem="3X2-6b-Wji" firstAttribute="centerX" secondItem="IDd-cu-Cwu" secondAttribute="centerX" id="c6d-SF-3k9"/>
+                            <constraint firstItem="SEL-Re-fOL" firstAttribute="centerX" secondItem="UgO-5X-l5h" secondAttribute="centerX" id="eT4-fT-m5P"/>
+                            <constraint firstItem="UgO-5X-l5h" firstAttribute="centerX" secondItem="IDd-cu-Cwu" secondAttribute="centerX" id="fRH-Wv-aUD"/>
+                            <constraint firstItem="BjB-b1-xc7" firstAttribute="leading" secondItem="UgO-5X-l5h" secondAttribute="leading" id="gUw-nj-sLW"/>
+                            <constraint firstItem="UgO-5X-l5h" firstAttribute="width" secondItem="IDd-cu-Cwu" secondAttribute="width" multiplier="0.8" id="gb2-qJ-qBw"/>
+                            <constraint firstItem="gNV-oH-Jtf" firstAttribute="width" secondItem="IDd-cu-Cwu" secondAttribute="width" multiplier="0.7" id="m7b-R8-LjU"/>
+                            <constraint firstItem="HJj-pc-gsZ" firstAttribute="top" secondItem="BjB-b1-xc7" secondAttribute="bottom" id="uHU-5K-x94"/>
+                            <constraint firstItem="gNV-oH-Jtf" firstAttribute="centerX" secondItem="UgO-5X-l5h" secondAttribute="centerX" id="uU8-Fq-Q6I"/>
+                            <constraint firstItem="SEL-Re-fOL" firstAttribute="centerY" secondItem="UgO-5X-l5h" secondAttribute="centerY" id="wvx-rC-ah2"/>
+                            <constraint firstItem="2zl-ee-rTX" firstAttribute="trailing" secondItem="UgO-5X-l5h" secondAttribute="trailing" id="zWd-Na-jWm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HUDView" destination="SEL-Re-fOL" id="F7l-Lm-4tl"/>
+                        <outlet property="drawCountLabel" destination="QPr-fM-lJx" id="4G4-B0-ldp"/>
+                        <outlet property="gameBoard" destination="UgO-5X-l5h" id="PZ0-FN-zfx"/>
+                        <outlet property="playButton" destination="3X2-6b-Wji" id="anv-jB-u2P"/>
+                        <outlet property="robotAScoreLabel" destination="BjB-b1-xc7" id="Lqw-Fj-z6c"/>
+                        <outlet property="robotBScoreLabel" destination="2zl-ee-rTX" id="lCL-B9-qPU"/>
+                        <outlet property="victoryMessageRobotA" destination="HJj-pc-gsZ" id="YDp-eC-17F"/>
+                        <outlet property="victoryMessageRobotB" destination="gNV-oH-Jtf" id="DWP-L3-FAH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBO-FY-aoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="287"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_play" width="192" height="154"/>
+    </resources>
+</document>
